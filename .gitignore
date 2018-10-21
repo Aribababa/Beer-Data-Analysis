@@ -1,6 +1,7 @@
 # Compiled Object files
 *.o
 *.obj
+.pyc
 
 # Compiled Dynamic libraries
 *.so

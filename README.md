@@ -9,3 +9,14 @@ This is a dataset of 75,000 homebrewed beers with over 176 different styles. Bee
   <img src="https://static.vinepair.com/wp-content/uploads/2015/08/craft-beer-definition-inside-header.jpg">
 </p>
 
+## Importing the libraries
+I will be using this libraries to make the analysis. In this case all the data was stored in a MondoDB, but all the Processing is based on Pandas dataframe. The advatnage here is that you can edit the Visualization file to charge the CSV file is you do not want to set the database.
+
+```python
+import numpy as np
+import pandas as pd
+import missingno as msno
+import matplotlib.pyplot as plt
+import seaborn as sns
+sns.set(color_codes=True)
+```

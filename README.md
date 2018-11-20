@@ -20,3 +20,28 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set(color_codes=True)
 ```
+## Mounting the Database
+
+To mount the .CSV file in the Database you can use the function load_csv_file() where the parameters to run this funciotn are:
+```python
+    def load_csv_file(self, csv_file, setname, init_line, final_line):
+        """
+        Load a csv file to the database
+
+        :param csv_file: CSV file
+        :param setname: Collection Name
+        :param init_line: init line of the csv file
+        :param final_line: fianl line of the csv file
+        :return: None
+        """
+```
+An example to use this funcion is
+```python
+COLLECTION_NAME = "Crafted-Beer-"
+COLLECTION_LIMIT = 32
+indexer = 0
+
+for i in range(0, COLLECTION_LIMIT):
+	load_csv_file("file.csv", COLLECTION_NAME + str(i), indexer, indexer+1000)
+	indexer += 1000
+```

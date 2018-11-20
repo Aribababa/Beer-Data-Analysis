@@ -47,3 +47,20 @@ for i in range(0, COLLECTION_LIMIT):
 	load_csv_file("file.csv", COLLECTION_NAME + str(i), indexer, indexer+1000)
 	indexer += 1000
 ```
+
+## Running the project.
+Once you have the Database, Just simply run main.py and be sure that all the python files are in the same folder (I reccomend you to mantain the folder structure usen in the repository).
+
+    ../Scripts> python main.py
+    
+   All the results are saved in the result folder, but if you want to change this route, there is a variable where you can change the parameter to set a new route
+```python
+   visualization = DataVisualization(path="../Results", categoty="Crafted beer")
+```
+Also for the Database, if you dont have a local MongoDB server, you can change the IP and the name of the database. If in the server there is no a DB called as the parameter, then it will be created.
+```python
+crafted_beer_db = MongoDatabase('mongodb://localhost:27017/', 'Artisanal-beer')
+```
+## Future work.
+
+ -   From our data You can make selections of a beer from the unique characteristics of each style, I think that for this case a clustering technique could be useful.

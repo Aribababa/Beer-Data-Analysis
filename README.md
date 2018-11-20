@@ -37,7 +37,7 @@ To mount the .CSV file in the Database you can use the function load_csv_file() 
         :return: None
         """
 ```
-An example to use this funcion is
+Here is an example of how to use this function to load all the lines from a csv file.
 ```python
 COLLECTION_NAME = "Crafted-Beer-"
 COLLECTION_LIMIT = 32

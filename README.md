@@ -20,6 +20,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set(color_codes=True)
 ```
+All the libraries can be downloaded using the pip command from Python.
+
 ## Mounting the Database
 
 To mount the .CSV file in the Database you can use the function load_csv_file() where the parameters to run this funciotn are:
